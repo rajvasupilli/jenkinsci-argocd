@@ -14,7 +14,7 @@ spec:
         app: argo
     spec:
       containers:
-      - image: raj786/myrepo:argodemo
+      - image: raj786/argodemo:latest
         name: argo
         ports:
         - containerPort: 80
