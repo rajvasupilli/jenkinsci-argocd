@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argo
+  name: argo-ui
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: argo
+      app: argo-ui
   template:
     metadata:
       labels:
-        app: argo
+        app: argo-ui
     spec:
       containers:
       - image: raj786/argodemo:latest
-        name: argo
+        name: argo-ui
         ports:
         - containerPort: 80
